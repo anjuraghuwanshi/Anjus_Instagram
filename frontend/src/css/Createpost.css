@@ -1,0 +1,101 @@
+.createPost{
+    width: 100%;
+    height: 100%;
+    margin-top: -55%;
+}
+.createPostbox{
+    max-width: 500px;
+    margin: 50% auto;
+    /* border:1px solid rgb(173, 173,173); */
+    border-radius: 5px;
+    padding-top: 120px;
+    
+}
+.main-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(173, 173,173);
+}
+.main-div input{
+    border: none;
+}
+.post_header{
+    border: 1px solid rgb(173, 173, 173);
+    display: flex;
+}
+#post-btn{
+    border: none;
+    color:#339ce3;
+    background:none;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.card-header{
+    display: flex;
+  border-bottom: 1px solid rgb(173, 173, 173);
+
+    align-items: center;
+}
+.card-pic img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 5px;
+}
+.details{
+   /* border-top:  1px solid rgb(173, 173,173); */
+}
+textarea{
+    width: 100%;
+    border:none;
+    outline: none;
+    resize: none;
+    border-bottom: 1px solid rgb(173, 173, 173);
+}
+#output{
+    width:300px;
+    height: 350px;
+    object-fit: cover;
+    border: none;
+    outline: none;
+    object-fit: cover;
+    margin-top: 5px auto;
+
+}
+@media only screen and (max-width: 900px) {
+    textarea{
+        width: 62%;
+        border:none;
+        outline: none;
+        resize: none;
+        border-bottom: 1px solid rgb(173, 173, 173);
+    }
+    .card-header{
+        width: 62%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    
+    .createPost{
+
+        margin-top: -45%;
+    }
+    textarea{
+        width: 100%;
+        border:none;
+        outline: none;
+        resize: none;
+        border-bottom: 1px solid rgb(173, 173, 173);
+    }
+    .card-header{
+        width: 100%;
+    }
+.createPostbox{
+    max-width: 350px;
+   padding-top: 120px;
+
+}
+}

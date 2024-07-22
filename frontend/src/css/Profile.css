@@ -1,0 +1,93 @@
+.profile {
+    display: flex;
+    padding-top: 2%;
+   align-items: center;
+  margin-left: 30%;
+  gap: 50px;
+   border-bottom: 1px solid rgb(173,173,173);
+  margin-right: 10%;
+  padding-bottom: 10%;
+}
+
+.profile-img img{
+    width:140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.userid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.info{
+    display: flex;
+    align-items: center;
+  gap: 20px;
+}
+
+.flw-unflw-btn{
+   width: 80px;
+   height: 32px;
+    background-color: rgb(10, 129, 214);
+    color :white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+/* 
+.sidenav_logo{
+    display: none;
+} */
+
+.user-post{
+    margin-left: 30%;
+    margin-top: 2%;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    
+}
+.post-container{
+    width: 300px;
+    height: 300px;
+}
+.post-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media only screen and (max-width: 600px) {
+    .profile {
+        padding-top: 9.5%;
+        margin-left: 5%;
+        justify-content: center;
+        gap: 40px;
+    }
+    .profile-img img{
+        width:80px;
+        height: 80px;
+        object-fit: cover;
+   
+    }
+    .userid{
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content:flex-start;
+      gap: 0;
+    }
+    .user-post{
+        margin-left: 5%;
+        margin-top: 2%;
+        gap: 3px;
+    
+        
+    }
+    .post-container{
+        width: 100px;
+        height: 100px;
+    }
+}

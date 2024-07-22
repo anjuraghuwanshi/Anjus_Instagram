@@ -1,0 +1,224 @@
+.post{
+   display: flex;
+   flex-direction: column;
+   margin: 0 auto;
+   width: 520px;
+   height: 100%;
+   overflow: hidden;
+ 
+}
+.card{
+    width: 100%;
+    height: max-content;
+    border-radius: 5px;
+    
+}
+.card-image img{
+    width:100%;
+    height: 470px;
+    object-fit: cover;
+    border: none;
+    outline: none;
+    object-fit: cover;
+    margin-top: 5px;
+}
+.card-content{
+    line-height: 0%;
+    margin: 2%;
+}
+.card-content p{
+    font-size: 13px;
+}
+.card-content i{
+    cursor: pointer;
+}
+.caption{
+    display: flex;
+    align-items: center;
+    line-height: 0%;
+    gap: 2px;
+    font-size: 15px;
+}
+.caption span{
+    font-weight: bold;
+}
+.add-comment{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(173,173,173);
+
+}
+.add-comment input{ 
+   
+        width: 90%;
+        border:none;
+        outline: none;
+        border-radius: 0;
+}
+.add-comment button{
+    border: none;
+    color:#339ce3;
+    background:none;
+    font-weight: bolder;
+    cursor: pointer;
+}
+@media only screen and (max-width: 900px) {
+    .post{
+        margin-top: -30px;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .card{
+       
+        width: 100%;
+        height: max-content;
+        border-radius: 0;
+
+    }
+    .card-image img{
+        width:100%;
+        height: 350px;
+    }
+    .caption{
+       height: inherit;
+        font-size: 13px;
+        line-height: normal;
+        overflow: hidden;
+        align-items: baseline;
+        gap: 4px;
+    }
+    .caption p{
+        width: 100%;
+    }
+    .card-content{
+        line-height: 0.9;
+        font-size: 15px;
+   
+    }
+}
+
+.RedHeart{
+    color: red;
+}
+.showComment{
+    width:100vw;
+    min-height: 100vh;
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: rgba(16,13,13,0.4);
+}
+.container{
+    display: flex;
+    width: 80%;
+   background-color: white;
+    position: absolute;
+    top:10%;
+    left:10%;
+   height: 80%;
+   gap:10px;
+   
+}
+.postPic{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: blue;
+}
+.postPic img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.details{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+   
+}
+.comment-section{
+    flex-grow: 4;
+}
+.close-comment{
+    position: fixed;
+    top: 3%;
+    right: 5%;
+    font-size: 50px;
+    font-weight: bolder;
+    cursor: pointer;
+    color: white;
+}
+
+.comm{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.comm img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+@media only screen and (max-width: 900px) {
+   .showComment .container {
+    display: flex;
+    width: 65%;
+   background-color: white;
+    position: absolute;
+    top:30%;
+    left:20%;
+   height: inherit;
+   justify-content: center;
+   align-items: center;
+   gap:10px;
+   }
+   .details{
+    width: 100vw;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+/* .postPic img{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+} */
+}
+@media only screen and (max-width: 600px) {
+.card{
+    margin: auto;
+    width: 99%;
+}
+   .showComment .container{
+        display: flex;
+        width: 100%;
+       background-color: white;
+        position: absolute;
+        top:0;
+        left:0;
+       height: 100%;
+      
+    }  
+    .close-comment{
+        position: fixed;
+        top: 2%;
+        right: 5%;
+        font-size: 40px;
+        font-weight: bolder;
+        cursor: pointer;
+        color: black;
+    }  
+       .postPic{
+   display: none;
+}
+}
+@media only screen and (max-width: 600px) {
+    .post{
+        margin-top: 30px;
+    }
+}
